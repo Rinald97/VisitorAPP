@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="visitorappDataSet" targetNamespace="http://tempuri.org/visitorappDataSet.xsd" xmlns:mstns="http://tempuri.org/visitorappDataSet.xsd" xmlns="http://tempuri.org/visitorappDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="visitorappConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="visitorappConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.app.Properties.Settings.GlobalReference.Default.visitorappConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="registerTableAdapter" GeneratorDataComponentClassName="registerTableAdapter" Name="register" UserDataComponentName="registerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="visitorappConnectionString1 (Settings)" DbObjectName="visitorapp.register" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `name`, `address`, `person_to_meet`, `category`, `pass_id_no`, `check_in_time`, `status`, `check_out_time` FROM `register`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="visitorappDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="visitorappDataSet" msprop:Generator_UserDSName="visitorappDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="register" msprop:Generator_TableClassName="registerDataTable" msprop:Generator_TableVarName="tableregister" msprop:Generator_TablePropName="register" msprop:Generator_RowDeletingName="registerRowDeleting" msprop:Generator_RowChangingName="registerRowChanging" msprop:Generator_RowEvHandlerName="registerRowChangeEventHandler" msprop:Generator_RowDeletedName="registerRowDeleted" msprop:Generator_UserTableName="register" msprop:Generator_RowChangedName="registerRowChanged" msprop:Generator_RowEvArgName="registerRowChangeEvent" msprop:Generator_RowClassName="registerRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
